@@ -5,7 +5,7 @@ Se nos pide armar un programa que ayude a entender qué cosas le gustan a distin
 
 ## Objetos y personas
 
-Tener en cuenta a estas personas:
+Tener en cuenta a estas personavs:
 - _Rosa_: le gustan las cosas que pesan 2 kilos (o sea 2000 gramos) o menos.
 - _Estefanía_: le gustan las cosas de colores fuertes.
 - _Luisa_: le gustan las cosas que sean de un material que brilla.

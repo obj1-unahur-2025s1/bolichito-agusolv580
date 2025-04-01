@@ -1,3 +1,6 @@
+import objetos.*
+
+
 object rosa{
     method leGusta(obj){
         return obj.peso() <= 2000

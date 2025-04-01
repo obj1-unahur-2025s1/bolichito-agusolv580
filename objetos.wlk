@@ -19,6 +19,12 @@ object pardo{
   }
 }
 
+object naranja{
+  method esFuerte(){
+    return true
+  }
+}
+
 object cobre{
   method esBrillante(){
     return true
@@ -50,31 +56,64 @@ object lino{
 }
 
 object remera{
-  const color = rojo
-  const peso = 800
-  const material = lino
+  method color() = rojo
+  method peso() = 800
+  method material() = lino
 }
 
 object pelota{
-  const color = pardo
-  const peso = 1300
-  const material = cuero
+  method color() = pardo
+  method peso() = 1300
+  method material() = cuero
 }
 
 object biblioteca{
-  const color = verde
-  const peso = 800
-  const material = madera
+  method color() = verde
+  method peso() = 800
+  method material() = madera
 } 
 
 object muneco{
-  const color = celeste
-  var property peso = null
-  const material = vidrio
+  var peso = null
+  method color() = celeste
+  method peso() = peso
+  method peso(unPeso) {
+    peso = unPeso
+  }
+  method material() = vidrio
 }
 
 object placa{
-  var property color = null
-  var property peso = null
-  const material = cobre
+  var color = null
+  var peso = null
+  method color(unColor) {
+    color = unColor
+  }
+  method color() = color
+  method peso(unPeso) {
+    peso = unPeso
+  }
+  method peso() = peso
+  method material() = cobre
+}
+
+object arito{
+  method color() = celeste
+  method material() = cobre
+  method peso() = 180
+}
+
+object banquito{
+  var property color = naranja
+  method peso() = 1700
+  method material() = madera
+} 
+
+object cajita{
+  var property objetoDentro = pelota
+  method color() = rojo
+  method material() = cobre
+  method peso(){
+    return 400 + objetoDentro.peso()
+  }
 }
